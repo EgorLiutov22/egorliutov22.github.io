@@ -1,78 +1,31 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8" />
-<title>Система бронирования отеля</title>
-<style>
-  body { font-family: Arial, sans-serif; margin: 20px; }
-  label { display: block; margin-top: 10px; }
-  button { margin-top: 15px; }
-  #result { margin-top: 20px; font-weight: bold; }
-</style>
-</head>
-<body>
-
-<h2>Бронирование номера</h2>
-
-<!-- Вводные данные -->
-<label>
-  Есть свободные номера:
-  <select id="availability">
-    <option value="да">да</option>
-    <option value="нет">нет</option>
-  </select>
-</label>
-
-<label>
-  Платёж одобрен:
-  <select id="payment">
-    <option value="да">да</option>
-    <option value="нет">нет</option>
-  </select>
-</label>
-
-<label>
-  Специальное предложение:
-  <select id="specialOffer">
-    <option value="да">да</option>
-    <option value="нет">нет</option>
-  </select>
-</label>
-
-<button onclick="processBooking()">Обработать бронирование</button>
-
-<div id="result"></div>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My calc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    
+    <div class="mb-3">
+  <label for="heighinput" class="form-label">Heigh in sm</label>
+  <input type="int" class="form-control" id="heighinput" ><br>
+    <label for="weighinput" class="form-label">Weight in kg</label>
+  <input type="int" class="form-control" id="weighinput" ><br>
+</div>
+<button type="button" class="btn btn-primary" onclick="getBMI()">Click</button>
+<h1 id="output"></h1>
 <script>
-function processBooking() {
-  // Получение значений условий
-  const availability = document.getElementById('availability').value;
-  const payment = document.getElementById('payment').value;
-  const specialOffer = document.getElementById('specialOffer').value;
-
-  const resultDiv = document.getElementById('result');
-
-  // Логика принятия решения
-  if (availability === 'нет') {
-    resultDiv.textContent = 'Отказать в бронировании (нет свободных номеров).';
-    return;
-  }
-
-  if (payment !== 'да') {
-    resultDiv.textContent = 'Отказать в бронировании (платёж не одобрен).';
-    return;
-  }
-
-  // Если есть специальное предложение
-  if (specialOffer === 'да') {
-    // Применить скидку
-    resultDiv.textContent = 'Бронирование подтверждено. Применена скидка.';
-  } else {
-    // Просто подтвердить бронирование
-    resultDiv.textContent = 'Бронирование подтверждено.';
-  }
-}
+    function getBMI()
+    {
+        const heigh = parseInt(document.getElementById("heighinput").value)/100
+        const weigh = parseInt(document.getElementById("weighinput").value)
+        const bmi = weigh/(heigh*heigh)
+        document.getElementById("output").innerText = Math.round(bmi)
+    }
 </script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
