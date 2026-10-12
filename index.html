@@ -1,44 +1,490 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Калькулятор имт</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-
-  <form>
-  <div class="mb-3">
-    <label for="InputWeight" class="form-label">Введите вес</label>
-    <input type="integer" class="form-control" id="InputWeight" >
-    
+<div style="width: 1440px; height: 4300px; background: white; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+  <div style="width: 1440px; height: 96px; padding-left: 80px; padding-right: 80px; background: white; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+    <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+      <div style="width: 42px; height: 42px; position: relative; background: #5830A4; overflow: hidden; border-radius: 12px; justify-content: center; align-items: center; display: flex">
+        <div style="width: 20px; height: 20px; left: 11px; top: 6px; position: absolute; border-radius: 9999px; border: 1.60px white solid"></div>
+        <div style="width: 8px; height: 8px; left: 17px; top: 12px; position: absolute; border-radius: 9999px; border: 1.60px white solid"></div>
+        <div style="width: 28px; height: 12px; left: 7px; top: 23px; position: absolute; border: 1.60px white solid"></div>
+      </div>
+      <div style="color: #211A32; font-size: 28px; font-family: Inter; font-weight: 700; word-wrap: break-word">PicNest</div>
+    </div>
   </div>
-  <div class="mb-3">
-    <label for="InputHeight" class="form-label">Введите рост в сантиметрах</label>
-    <input type="integer" class="form-control" id="InputHeight">
+  <div style="width: 1440px; height: 650px; padding-top: 54px; padding-bottom: 58px; padding-left: 80px; padding-right: 80px; position: relative; background: #F8F8FA; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+    <img style="width: 390px; height: 372px; left: 963px; top: 24px; position: absolute; transform: rotate(5deg); transform-origin: top left; border-radius: 16px" src="https://placehold.co/390x372" />
+    <img style="width: 244px; height: 290px; left: 821px; top: 198px; position: absolute; transform: rotate(-7deg); transform-origin: top left; border-radius: 16px" src="https://placehold.co/244x290" />
+    <img style="width: 294px; height: 218px; left: 1110px; top: 332px; position: absolute; transform: rotate(-5deg); transform-origin: top left; border-radius: 16px" src="https://placehold.co/294x218" />
+    <div style="width: 1440px; height: 650px; left: 0px; top: 0px; position: absolute; background: linear-gradient(90deg, #F8F8FA 0%, rgba(248, 248, 250, 0) 100%)"></div>
+    <div style="width: 760px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+      <div style="padding-left: 14px; padding-right: 14px; padding-top: 8px; padding-bottom: 8px; background: #F0EAF9; overflow: hidden; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="color: #5830A4; font-size: 13px; font-family: Inter; font-weight: 600; word-wrap: break-word">Фотографы · Видеографы · Фотостудии</div>
+      </div>
+      <div style="align-self: stretch"><span style="color: #211A32; font-size: 58px; font-family: Inter; font-weight: 700; line-height: 63.80px; word-wrap: break-word">Найдите идеального фотографа или студию<br/></span><span style="color: #5830A4; font-size: 58px; font-family: Inter; font-weight: 700; line-height: 63.80px; word-wrap: break-word">за 1 минуту</span></div>
+      <div style="width: 657px; color: #706A7C; font-size: 18px; font-family: Inter; font-weight: 400; line-height: 27.90px; word-wrap: break-word">Тысячи проверенных специалистов с прозрачными ценами и реальными портфолио. Бронируйте онлайн без звонков и предоплат</div>
+    </div>
+    <div style="width: 1280px; height: 100px; padding: 12px; left: 80px; top: 492px; position: absolute; background: white; box-shadow: 0px 12px 40px rgba(33, 26, 50, 0.08); overflow: hidden; border-radius: 16px; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+      <div style="width: 456px; padding-left: 20px; padding-right: 20px; overflow: hidden; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+        <div style="width: 24px; height: 24px; position: relative; overflow: hidden">
+          <div style="width: 20px; height: 16px; left: 2px; top: 4px; position: absolute; outline: 1.70px #5830A4 solid; outline-offset: -0.85px"></div>
+        </div>
+        <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7px; display: inline-flex">
+          <div style="align-self: stretch; color: #211A32; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">Что снимаем?</div>
+          <div style="align-self: stretch; color: #706A7C; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Выберите категорию</div>
+        </div>
+        <div style="width: 18px; height: 18px; position: relative; overflow: hidden">
+          <div style="width: 9px; height: 4.50px; left: 4.50px; top: 6.75px; position: absolute; outline: 1.70px #706A7C solid; outline-offset: -0.85px"></div>
+        </div>
+      </div>
+      <div style="width: 1px; height: 44px; background: #E8E4ED"></div>
+      <div style="width: 493px; padding-left: 20px; padding-right: 20px; overflow: hidden; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+        <div style="width: 24px; height: 24px; position: relative; overflow: hidden">
+          <div style="width: 18px; height: 20px; left: 3px; top: 2px; position: absolute; outline: 1.70px #5830A4 solid; outline-offset: -0.85px"></div>
+        </div>
+        <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7px; display: inline-flex">
+          <div style="align-self: stretch; color: #211A32; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">Дата и город</div>
+          <div style="align-self: stretch; color: #706A7C; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Когда и где планируете съёмку?</div>
+        </div>
+        <div style="width: 18px; height: 18px; position: relative; overflow: hidden">
+          <div style="width: 9px; height: 4.50px; left: 4.50px; top: 6.75px; position: absolute; outline: 1.70px #706A7C solid; outline-offset: -0.85px"></div>
+        </div>
+      </div>
+      <div style="height: 64px; padding-left: 24px; padding-right: 24px; background: #5830A4; overflow: hidden; border-radius: 12px; justify-content: center; align-items: center; gap: 10px; display: flex">
+        <div style="width: 20px; height: 20px; position: relative; overflow: hidden">
+          <div style="width: 15px; height: 15px; left: 2.50px; top: 2.50px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
+        </div>
+        <div style="color: white; font-size: 15px; font-family: Inter; font-weight: 600; word-wrap: break-word">Найти специалиста</div>
+      </div>
+    </div>
   </div>
-
-  
-</form>
-    <button onclick="getBMI()" class="btn btn-primary">Submit</button>
-    <h1 id="out"></h1>
-<script>
-  function getBMI()
-  {
-    const weight = parseInt(document.getElementById("InputWeight").value)
-    const height = parseInt(document.getElementById("InputHeight").value)/100
-    const res = weight/(height*height)
-    document.getElementById("out").innerHTML = Math.round(res, 2)
-  }
-</script>
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
-</html>
-
-
-
-
-
+  <div style="width: 1440px; padding-top: 64px; padding-bottom: 80px; padding-left: 80px; padding-right: 80px; background: white; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: flex">
+    <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: baseline; display: inline-flex">
+      <div style="color: #211A32; font-size: 36px; font-family: Inter; font-weight: 700; word-wrap: break-word">Что вам нужно снять?</div>
+      <div style="color: #706A7C; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word">Для важных моментов и больших идей</div>
+    </div>
+    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
+      <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 20px; display: inline-flex">
+        <div style="width: 305px; height: 268px; position: relative; box-shadow: 0px 10px 24px rgba(88, 48, 164, 0.15); overflow: hidden; border-radius: 16px; outline: 2px #5830A4 solid; outline-offset: -2px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+          <img style="width: 305px; height: 268px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/305x268" />
+          <div style="width: 305px; height: 268px; left: 0px; top: 0px; position: absolute; background: linear-gradient(180deg, rgba(33, 26, 50, 0) 0%, rgba(23, 16, 32, 0.80) 100%)"></div>
+          <div style="width: 257px; left: 24px; top: 216px; position: absolute; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 14px; display: flex">
+            <div style="align-self: stretch; color: white; font-size: 23px; font-family: Inter; font-weight: 400; line-height: 27.60px; word-wrap: break-word">Портреты</div>
+          </div>
+        </div>
+        <div style="width: 305px; height: 256px; position: relative; overflow: hidden; border-radius: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+          <img style="width: 305px; height: 256px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/305x256" />
+          <div style="width: 305px; height: 256px; left: 0px; top: 0px; position: absolute; background: linear-gradient(180deg, rgba(33, 26, 50, 0) 0%, rgba(23, 16, 32, 0.80) 100%)"></div>
+          <div style="width: 257px; left: 24px; top: 204px; position: absolute; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 14px; display: flex">
+            <div style="align-self: stretch; color: white; font-size: 23px; font-family: Inter; font-weight: 400; line-height: 27.60px; word-wrap: break-word">Мероприятия</div>
+          </div>
+          <div style="width: 32px; height: 32px; left: 253px; top: 20px; position: absolute; background: rgba(255, 255, 255, 0.15); overflow: hidden; border-radius: 100px; justify-content: center; align-items: center; display: inline-flex">
+            <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
+              <div style="width: 6.67px; height: 6.67px; left: 4.67px; top: 4.67px; position: absolute; outline: 1.80px white solid; outline-offset: -0.90px"></div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 305px; height: 256px; position: relative; overflow: hidden; border-radius: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+          <img style="width: 305px; height: 256px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/305x256" />
+          <div style="width: 305px; height: 256px; left: 0px; top: 0px; position: absolute; background: linear-gradient(180deg, rgba(33, 26, 50, 0) 0%, rgba(23, 16, 32, 0.80) 100%)"></div>
+          <div style="width: 257px; left: 24px; top: 204px; position: absolute; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 14px; display: flex">
+            <div style="align-self: stretch; color: white; font-size: 23px; font-family: Inter; font-weight: 400; line-height: 27.60px; word-wrap: break-word">Семья</div>
+          </div>
+          <div style="width: 32px; height: 32px; left: 253px; top: 20px; position: absolute; background: rgba(255, 255, 255, 0.15); overflow: hidden; border-radius: 100px; justify-content: center; align-items: center; display: inline-flex">
+            <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
+              <div style="width: 6.67px; height: 6.67px; left: 4.67px; top: 4.67px; position: absolute; outline: 1.80px white solid; outline-offset: -0.90px"></div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 305px; height: 256px; position: relative; overflow: hidden; border-radius: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+          <img style="width: 305px; height: 256px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/305x256" />
+          <div style="width: 305px; height: 256px; left: 0px; top: 0px; position: absolute; background: linear-gradient(180deg, rgba(33, 26, 50, 0) 0%, rgba(23, 16, 32, 0.80) 100%)"></div>
+          <div style="width: 257px; left: 24px; top: 204px; position: absolute; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 14px; display: flex">
+            <div style="align-self: stretch; color: white; font-size: 23px; font-family: Inter; font-weight: 400; line-height: 27.60px; word-wrap: break-word">Машины (Авто)</div>
+          </div>
+          <div style="width: 32px; height: 32px; left: 253px; top: 20px; position: absolute; background: rgba(255, 255, 255, 0.15); overflow: hidden; border-radius: 100px; justify-content: center; align-items: center; display: inline-flex">
+            <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
+              <div style="width: 6.67px; height: 6.67px; left: 4.67px; top: 4.67px; position: absolute; outline: 1.80px white solid; outline-offset: -0.90px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+        <div style="width: 305px; height: 256px; position: relative; overflow: hidden; border-radius: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+          <img style="width: 305px; height: 256px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/305x256" />
+          <div style="width: 305px; height: 256px; left: 0px; top: 0px; position: absolute; background: linear-gradient(180deg, rgba(33, 26, 50, 0) 0%, rgba(23, 16, 32, 0.80) 100%)"></div>
+          <div style="width: 257px; left: 24px; top: 204px; position: absolute; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 14px; display: flex">
+            <div style="align-self: stretch; color: white; font-size: 23px; font-family: Inter; font-weight: 400; line-height: 27.60px; word-wrap: break-word">Недвижимость</div>
+          </div>
+          <div style="width: 32px; height: 32px; left: 253px; top: 20px; position: absolute; background: rgba(255, 255, 255, 0.15); overflow: hidden; border-radius: 100px; justify-content: center; align-items: center; display: inline-flex">
+            <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
+              <div style="width: 6.67px; height: 6.67px; left: 4.67px; top: 4.67px; position: absolute; outline: 1.80px white solid; outline-offset: -0.90px"></div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 305px; height: 256px; position: relative; overflow: hidden; border-radius: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+          <img style="width: 305px; height: 256px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/305x256" />
+          <div style="width: 305px; height: 256px; left: 0px; top: 0px; position: absolute; background: linear-gradient(180deg, rgba(33, 26, 50, 0) 0%, rgba(23, 16, 32, 0.80) 100%)"></div>
+          <div style="width: 257px; left: 24px; top: 204px; position: absolute; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 14px; display: flex">
+            <div style="align-self: stretch; color: white; font-size: 23px; font-family: Inter; font-weight: 400; line-height: 27.60px; word-wrap: break-word">Предметная съемка</div>
+          </div>
+          <div style="width: 32px; height: 32px; left: 253px; top: 20px; position: absolute; background: rgba(255, 255, 255, 0.15); overflow: hidden; border-radius: 100px; justify-content: center; align-items: center; display: inline-flex">
+            <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
+              <div style="width: 6.67px; height: 6.67px; left: 4.67px; top: 4.67px; position: absolute; outline: 1.80px white solid; outline-offset: -0.90px"></div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 630px; height: 256px; position: relative; overflow: hidden; border-radius: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+          <img style="width: 630px; height: 256px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/630x256" />
+          <div style="width: 630px; height: 256px; left: 0px; top: 0px; position: absolute; background: linear-gradient(180deg, rgba(33, 26, 50, 0) 0%, rgba(23, 16, 32, 0.80) 100%)"></div>
+          <div style="width: 582px; left: 24px; top: 204px; position: absolute; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 14px; display: flex">
+            <div style="align-self: stretch; color: white; font-size: 23px; font-family: Inter; font-weight: 400; line-height: 27.60px; word-wrap: break-word">Свадьбы</div>
+          </div>
+          <div style="width: 32px; height: 32px; left: 578px; top: 20px; position: absolute; background: rgba(255, 255, 255, 0.15); overflow: hidden; border-radius: 100px; justify-content: center; align-items: center; display: inline-flex">
+            <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
+              <div style="width: 6.67px; height: 6.67px; left: 4.67px; top: 4.67px; position: absolute; outline: 1.80px white solid; outline-offset: -0.90px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="width: 1440px; padding-left: 80px; padding-right: 80px; padding-top: 96px; padding-bottom: 96px; background: white; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
+    <div style="width: 760px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+      <div style="color: #5830A4; font-size: 13px; font-family: Inter; font-weight: 600; word-wrap: break-word">Топ специалистов</div>
+      <div style="align-self: stretch; color: #211A32; font-size: 40px; font-family: Inter; font-weight: 700; line-height: 46px; word-wrap: break-word">Выбирайте лучших по портфолио и отзывам</div>
+      <div style="align-self: stretch; color: #706A7C; font-size: 18px; font-family: Inter; font-weight: 400; line-height: 27.90px; word-wrap: break-word">Проверенные фотографы и видеографы с реальными работами, честными отзывами и прозрачными ценами.</div>
+    </div>
+    <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+      <div style="width: 400px; background: white; box-shadow: 0px 12px 32px rgba(33, 26, 50, 0.06); overflow: hidden; border-radius: 16px; outline: 1px #E8E4ED solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="align-self: stretch; height: 220px; position: relative; overflow: hidden; border-top-left-radius: 16px; border-top-right-radius: 16px; background-image: url(https://placehold.co/400x220); flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+          <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; left: 16px; top: 16px; position: absolute; background: #F0EAF9; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+            <div style="color: #5830A4; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Проверенный эксперт</div>
+          </div>
+        </div>
+        <div style="align-self: stretch; padding: 24px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 14px; display: inline-flex">
+            <img style="width: 56px; height: 56px; border-radius: 28px" src="https://placehold.co/56x56" />
+            <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: inline-flex">
+              <div style="align-self: stretch; color: #211A32; font-size: 22px; font-family: Inter; font-weight: 700; line-height: 26.40px; word-wrap: break-word">Анна Смирнова</div>
+              <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                </div>
+                <div style="color: #211A32; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">4.9</div>
+                <div style="color: #706A7C; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">(125 отзыва)</div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+            <img style="width: 82px; height: 82px; border-radius: 12px" src="https://placehold.co/82x82" />
+            <img style="width: 122px; height: 82px; border-radius: 12px; border: 1px black solid" src="https://placehold.co/122x82" />
+            <img style="width: 82px; height: 82px; border-radius: 12px" src="https://placehold.co/82x82" />
+          </div>
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex; flex-wrap: wrap; align-content: flex-start">
+            <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; background: #F8F8FA; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: flex">
+              <div style="color: #706A7C; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">#свадьбы</div>
+            </div>
+            <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; background: #F8F8FA; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: flex">
+              <div style="color: #706A7C; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">#love-story</div>
+            </div>
+            <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; background: #F8F8FA; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: flex">
+              <div style="color: #706A7C; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">#портреты</div>
+            </div>
+          </div>
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+            <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
+              <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 2px #5830A4 solid; outline-offset: -1px"></div>
+            </div>
+            <div style="flex: 1 1 0; color: #211A32; font-size: 15px; font-family: Inter; font-weight: 600; word-wrap: break-word">от 5 500 ₽ / час</div>
+          </div>
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+            <div style="flex: 1 1 0; height: 48px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 12px; outline: 1px #E8E4ED solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+              <div style="color: #211A32; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Смотреть портфолио</div>
+            </div>
+            <div style="flex: 1 1 0; height: 48px; padding-left: 16px; padding-right: 16px; background: #5830A4; border-radius: 12px; justify-content: center; align-items: center; gap: 8px; display: flex">
+              <div style="color: white; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Забронировать</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="width: 400px; background: white; box-shadow: 0px 12px 32px rgba(33, 26, 50, 0.06); overflow: hidden; border-radius: 16px; outline: 1px #E8E4ED solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="align-self: stretch; height: 220px; position: relative; overflow: hidden; border-top-left-radius: 16px; border-top-right-radius: 16px; background-image: url(https://placehold.co/400x220); flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+          <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; left: 16px; top: 16px; position: absolute; background: #F0EAF9; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+            <div style="color: #5830A4; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Проверенный эксперт</div>
+          </div>
+        </div>
+        <div style="align-self: stretch; padding: 24px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 14px; display: inline-flex">
+            <img style="width: 56px; height: 56px; border-radius: 28px" src="https://placehold.co/56x56" />
+            <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: inline-flex">
+              <div style="align-self: stretch; color: #211A32; font-size: 22px; font-family: Inter; font-weight: 700; line-height: 26.40px; word-wrap: break-word">Илья Морозов</div>
+              <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                </div>
+                <div style="color: #211A32; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">4.9</div>
+                <div style="color: #706A7C; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">(134 отзыва)</div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+            <img style="width: 82px; height: 82px; border-radius: 12px" src="https://placehold.co/82x82" />
+            <img style="width: 82px; height: 82px; border-radius: 12px" src="https://placehold.co/82x82" />
+            <img style="width: 82px; height: 82px; border-radius: 12px" src="https://placehold.co/82x82" />
+            <img style="width: 82px; height: 82px; border-radius: 12px" src="https://placehold.co/82x82" />
+          </div>
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex; flex-wrap: wrap; align-content: flex-start">
+            <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; background: #F8F8FA; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: flex">
+              <div style="color: #706A7C; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">#мероприятия</div>
+            </div>
+            <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; background: #F8F8FA; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: flex">
+              <div style="color: #706A7C; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">#видеография</div>
+            </div>
+            <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; background: #F8F8FA; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: flex">
+              <div style="color: #706A7C; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">#корпоратив</div>
+            </div>
+          </div>
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+            <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
+              <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 2px #5830A4 solid; outline-offset: -1px"></div>
+            </div>
+            <div style="flex: 1 1 0; color: #211A32; font-size: 15px; font-family: Inter; font-weight: 600; word-wrap: break-word">от 5 000 ₽ / час</div>
+          </div>
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+            <div style="flex: 1 1 0; height: 48px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 12px; outline: 1px #E8E4ED solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+              <div style="color: #211A32; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Смотреть портфолио</div>
+            </div>
+            <div style="flex: 1 1 0; height: 48px; padding-left: 16px; padding-right: 16px; background: #5830A4; border-radius: 12px; justify-content: center; align-items: center; gap: 8px; display: flex">
+              <div style="color: white; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Забронировать</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="width: 400px; background: white; box-shadow: 0px 12px 32px rgba(33, 26, 50, 0.06); overflow: hidden; border-radius: 16px; outline: 1px #E8E4ED solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="align-self: stretch; height: 220px; position: relative; overflow: hidden; border-top-left-radius: 16px; border-top-right-radius: 16px; background-image: url(https://placehold.co/400x220); flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+          <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; left: 16px; top: 16px; position: absolute; background: #F0EAF9; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+            <div style="color: #5830A4; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Проверенный эксперт</div>
+          </div>
+        </div>
+        <div style="align-self: stretch; padding: 24px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 14px; display: inline-flex">
+            <img style="width: 56px; height: 56px; border-radius: 28px" src="https://placehold.co/56x56" />
+            <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: inline-flex">
+              <div style="align-self: stretch; color: #211A32; font-size: 22px; font-family: Inter; font-weight: 700; line-height: 26.40px; word-wrap: break-word">Мария Петрова</div>
+              <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                  <div style="width: 14px; height: 14px; position: relative; overflow: hidden">
+                    <div style="width: 11.67px; height: 11.13px; left: 1.17px; top: 1.17px; position: absolute; outline: 2px #F59E0B solid; outline-offset: -1px"></div>
+                  </div>
+                </div>
+                <div style="color: #211A32; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">4.9</div>
+                <div style="color: #706A7C; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">(201 отзыва)</div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+            <img style="width: 82px; height: 82px; border-radius: 12px" src="https://placehold.co/82x82" />
+            <img style="width: 109px; height: 82px; border-radius: 12px" src="https://placehold.co/109x82" />
+            <img style="width: 82px; height: 82px; border-radius: 12px" src="https://placehold.co/82x82" />
+            <img style="width: 82px; height: 82px; border-radius: 12px" src="https://placehold.co/82x82" />
+          </div>
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex; flex-wrap: wrap; align-content: flex-start">
+            <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; background: #F8F8FA; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: flex">
+              <div style="color: #706A7C; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">#предметная</div>
+            </div>
+            <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; background: #F8F8FA; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: flex">
+              <div style="color: #706A7C; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">#студийная</div>
+            </div>
+            <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; background: #F8F8FA; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: flex">
+              <div style="color: #706A7C; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">#продукт</div>
+            </div>
+          </div>
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+            <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
+              <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 2px #5830A4 solid; outline-offset: -1px"></div>
+            </div>
+            <div style="flex: 1 1 0; color: #211A32; font-size: 15px; font-family: Inter; font-weight: 600; word-wrap: break-word">от 10 000 ₽ / час</div>
+          </div>
+          <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+            <div style="flex: 1 1 0; height: 48px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 12px; outline: 1px #E8E4ED solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+              <div style="color: #211A32; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Смотреть портфолио</div>
+            </div>
+            <div style="flex: 1 1 0; height: 48px; padding-left: 16px; padding-right: 16px; background: #5830A4; border-radius: 12px; justify-content: center; align-items: center; gap: 8px; display: flex">
+              <div style="color: white; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Забронировать</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="width: 1440px; padding-left: 80px; padding-right: 80px; padding-top: 96px; padding-bottom: 96px; background: white; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
+    <div style="width: 760px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+      <div style="color: #5830A4; font-size: 13px; font-family: Inter; font-weight: 600; word-wrap: break-word">Как это работает</div>
+      <div style="align-self: stretch; color: #211A32; font-size: 40px; font-family: Inter; font-weight: 700; line-height: 46px; word-wrap: break-word">3 шага до идеальных кадров</div>
+      <div style="align-self: stretch; color: #706A7C; font-size: 18px; font-family: Inter; font-weight: 400; line-height: 27.90px; word-wrap: break-word">Найдите подходящего специалиста быстро, сравните работы и забронируйте съёмку без лишних звонков.</div>
+    </div>
+    <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+      <div style="width: 400px; height: 320px; padding: 24px; background: white; box-shadow: 0px 12px 32px rgba(33, 26, 50, 0.06); overflow: hidden; border-radius: 16px; outline: 1px #E8E4ED solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+        <div style="width: 56px; height: 56px; background: #F0EAF9; border-radius: 16px; justify-content: center; align-items: center; display: inline-flex">
+          <div style="width: 24px; height: 24px; position: relative; overflow: hidden">
+            <div style="width: 18px; height: 18px; left: 3px; top: 3px; position: absolute; outline: 2px #5830A4 solid; outline-offset: -1px"></div>
+          </div>
+        </div>
+        <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+          <div style="align-self: stretch; color: #211A32; font-size: 24px; font-family: Inter; font-weight: 700; line-height: 28.80px; word-wrap: break-word">Фильтруйте и ищите</div>
+          <div style="align-self: stretch; color: #706A7C; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24.80px; word-wrap: break-word">Выберите нишу, стиль и бюджет — система покажет подходящих специалистов с реальными работами.</div>
+        </div>
+      </div>
+      <div style="width: 400px; height: 320px; padding: 24px; background: white; box-shadow: 0px 12px 32px rgba(33, 26, 50, 0.06); overflow: hidden; border-radius: 16px; outline: 1px #E8E4ED solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+        <div style="width: 56px; height: 56px; background: #F0EAF9; border-radius: 16px; justify-content: center; align-items: center; display: inline-flex">
+          <div style="width: 24px; height: 24px; position: relative; overflow: hidden">
+            <div style="width: 18px; height: 18px; left: 3px; top: 3px; position: absolute; outline: 2px #5830A4 solid; outline-offset: -1px"></div>
+          </div>
+        </div>
+        <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+          <div style="align-self: stretch; color: #211A32; font-size: 24px; font-family: Inter; font-weight: 700; line-height: 28.80px; word-wrap: break-word">Изучайте портфолио</div>
+          <div style="align-self: stretch; color: #706A7C; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24.80px; word-wrap: break-word">Смотрите реальные работы, читайте честные отзывы и сравнивайте подходы разных мастеров.</div>
+        </div>
+      </div>
+      <div style="width: 400px; height: 320px; padding: 24px; background: white; box-shadow: 0px 12px 32px rgba(33, 26, 50, 0.06); overflow: hidden; border-radius: 16px; outline: 1px #E8E4ED solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+        <div style="width: 56px; height: 56px; background: #F0EAF9; border-radius: 16px; justify-content: center; align-items: center; display: inline-flex">
+          <div style="width: 24px; height: 24px; position: relative; overflow: hidden">
+            <div style="width: 18px; height: 20px; left: 3px; top: 2px; position: absolute; outline: 2px #5830A4 solid; outline-offset: -1px"></div>
+          </div>
+        </div>
+        <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+          <div style="align-self: stretch; color: #211A32; font-size: 24px; font-family: Inter; font-weight: 700; line-height: 28.80px; word-wrap: break-word">Бронируйте онлайн</div>
+          <div style="align-self: stretch; color: #706A7C; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24.80px; word-wrap: break-word">Выберите дату, оплачивайте безопасно через сервис и получайте подтверждение без звонков.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="width: 1440px; padding-left: 80px; padding-right: 80px; padding-top: 72px; padding-bottom: 72px; background: #211A32; overflow: hidden; justify-content: flex-start; align-items: center; gap: 40px; display: inline-flex">
+    <div style="width: 560px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+      <div style="color: #F0EAF9; font-size: 13px; font-family: Inter; font-weight: 600; word-wrap: break-word">Для специалистов</div>
+      <div style="align-self: stretch; color: white; font-size: 44px; font-family: Inter; font-weight: 700; line-height: 48.40px; word-wrap: break-word">Вы фотограф или видеограф? PicNest приведет вам клиентов</div>
+      <div style="align-self: stretch; color: rgba(255, 255, 255, 0.80); font-size: 18px; font-family: Inter; font-weight: 400; line-height: 27.90px; word-wrap: break-word">Создайте красивое портфолио, настройте календарь доступности и получайте заявки на автопилоте. Мы берем на себя бронирования и общение.</div>
+      <div style="height: 56px; padding-left: 24px; padding-right: 24px; background: white; overflow: hidden; border-radius: 12px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+        <div style="color: #211A32; font-size: 15px; font-family: Inter; font-weight: 600; word-wrap: break-word">Стать специалистом</div>
+      </div>
+    </div>
+    <div style="width: 720px; height: 420px; background: #1B1430; box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.25); overflow: hidden; border-radius: 24px; outline: 1px rgba(255, 255, 255, 0.08) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+      <div style="align-self: stretch; padding: 24px; background: rgba(255, 255, 255, 0.05); overflow: hidden; border-bottom: 1px rgba(255, 255, 255, 0.08) solid; justify-content: space-between; align-items: center; display: inline-flex">
+        <div style="overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+          <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">Личный кабинет</div>
+          <div style="color: rgba(255, 255, 255, 0.70); font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Анна Смирнова · Портфолио</div>
+        </div>
+        <div style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; background: #F0EAF9; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: flex">
+          <div style="color: #5830A4; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Проверенный эксперт</div>
+        </div>
+      </div>
+      <div style="align-self: stretch; flex: 1 1 0; padding: 24px; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+        <div style="width: 220px; align-self: stretch; background: rgba(255, 255, 255, 0.05); overflow: hidden; border-radius: 20px; outline: 1px rgba(255, 255, 255, 0.08) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+          <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+            <div style="color: rgba(255, 255, 255, 0.50); font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Отзывы</div>
+            <div style="color: white; font-size: 28px; font-family: Inter; font-weight: 700; word-wrap: break-word">124</div>
+          </div>
+          <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+            <div style="color: rgba(255, 255, 255, 0.50); font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Заявки</div>
+            <div style="color: white; font-size: 28px; font-family: Inter; font-weight: 700; word-wrap: break-word">18</div>
+          </div>
+          <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+            <div style="color: rgba(255, 255, 255, 0.50); font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Выручка</div>
+            <div style="color: white; font-size: 28px; font-family: Inter; font-weight: 700; word-wrap: break-word">420 000 ₽</div>
+          </div>
+        </div>
+        <div style="flex: 1 1 0; align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+          <div style="align-self: stretch; height: 180px; background: rgba(255, 255, 255, 0.05); overflow: hidden; border-radius: 20px; outline: 1px rgba(255, 255, 255, 0.08) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+            <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: flex-start; display: inline-flex">
+              <div style="color: white; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Заполненность календаря</div>
+              <div style="color: rgba(255, 255, 255, 0.50); font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">за 30 дней</div>
+            </div>
+            <div style="align-self: stretch; flex: 1 1 0; overflow: hidden; justify-content: flex-start; align-items: flex-end; gap: 12px; display: inline-flex">
+              <div style="width: 28px; height: 72px; background: #5830A4; border-radius: 10px"></div>
+              <div style="width: 28px; height: 96px; background: #5830A4; border-radius: 10px"></div>
+              <div style="width: 28px; height: 84px; background: #5830A4; border-radius: 10px"></div>
+              <div style="width: 28px; height: 108px; background: #5830A4; border-radius: 10px"></div>
+              <div style="width: 28px; height: 90px; background: #5830A4; border-radius: 10px"></div>
+              <div style="width: 28px; height: 120px; background: #5830A4; border-radius: 10px"></div>
+              <div style="width: 28px; height: 102px; background: #5830A4; border-radius: 10px"></div>
+            </div>
+          </div>
+          <div style="align-self: stretch; flex: 1 1 0; background: rgba(255, 255, 255, 0.05); overflow: hidden; border-radius: 20px; outline: 1px rgba(255, 255, 255, 0.08) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+            <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: flex-start; display: inline-flex">
+              <div style="color: white; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Новые работы</div>
+              <div style="color: rgba(255, 255, 255, 0.50); font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">4</div>
+            </div>
+            <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+              <img style="width: 96px; height: 54px; border-radius: 12px" src="https://placehold.co/96x54" />
+              <img style="width: 96px; height: 54px; border-radius: 12px" src="https://placehold.co/96x54" />
+              <img style="width: 96px; height: 54px; border-radius: 12px" src="https://placehold.co/96x54" />
+              <img style="width: 96px; height: 54px; border-radius: 12px" src="https://placehold.co/96x54" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="width: 1440px; height: 207px; padding-left: 80px; padding-right: 80px; padding-top: 96px; padding-bottom: 96px; background: white"></div>
+  <div style="width: 1440px; padding-top: 64px; padding-bottom: 32px; padding-left: 80px; padding-right: 80px; background: white; overflow: hidden; border-top: 1px #E8E4ED solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
+    <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: flex-start; display: inline-flex">
+      <div style="width: 320px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+        <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+          <div style="width: 42px; height: 42px; position: relative; background: #5830A4; overflow: hidden; border-radius: 12px; justify-content: center; align-items: center; display: flex">
+            <div style="width: 20px; height: 20px; left: 11px; top: 6px; position: absolute; border-radius: 9999px; border: 1.60px white solid"></div>
+            <div style="width: 8px; height: 8px; left: 17px; top: 12px; position: absolute; border-radius: 9999px; border: 1.60px white solid"></div>
+            <div style="width: 28px; height: 12px; left: 7px; top: 23px; position: absolute; border: 1.60px white solid"></div>
+          </div>
+          <div style="color: #211A32; font-size: 28px; font-family: Inter; font-weight: 700; word-wrap: break-word">PicNest</div>
+        </div>
+        <div style="align-self: stretch; color: #706A7C; font-size: 15px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">Платформа для поиска проверенных фотографов, видеографов и фотостудий. Бронируйте онлайн без предоплат и лишних звонков.</div>
+      </div>
+    </div>
+    <div style="align-self: stretch; height: 1px; background: #E8E4ED"></div>
+    <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+      <div style="color: #706A7C; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">© 2024 PicNest. Все права защищены.</div>
+      <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 24px; display: flex">
+        <div style="color: #706A7C; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Политика конфиденциальности</div>
+        <div style="color: #706A7C; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Пользовательское соглашение</div>
+      </div>
+    </div>
+  </div>
+</div>
