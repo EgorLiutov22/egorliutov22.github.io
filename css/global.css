@@ -27,14 +27,24 @@ html {
 
 
 
+/* container utility class - centers content with max width */
+
+.container {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-left: var(--margin-sm);
+	padding-right: var(--margin-sm);
+}
+
 /* section utility classes */
 
 .section-white {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	background-color: #fff;
-	padding: 0 80px;
+	padding: var(--margin-md) 32px;
 }
 
 

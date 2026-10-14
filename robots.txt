@@ -1,0 +1,11 @@
+# Robots.txt for PicNest
+# https://egorliutov22.github.io/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://egorliutov22.github.io/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
